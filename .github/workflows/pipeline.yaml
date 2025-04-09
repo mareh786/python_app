@@ -35,3 +35,6 @@ jobs:
          docker build -t python_app .
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Run a one-line script
+        run: |
+          docker run -d -p 5000:5000 python_app
