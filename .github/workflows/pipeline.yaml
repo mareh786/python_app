@@ -33,6 +33,6 @@ jobs:
       - name: Docker Build image from Dockerile
         run: |
          docker build -t python_app .
-      # - name: Run a one-line script
-      #   run: |
-      #     docker run -d -p 5000:5000 python_app
+      - name: Run a one-line script
+        run: |
+           docker run -d -p 5000:5000 python_app
